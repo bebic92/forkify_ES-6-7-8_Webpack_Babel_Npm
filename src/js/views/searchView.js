@@ -20,6 +20,16 @@ export const clearButtons = () => {
 
 };
 
+export const highlightRecipeOnList = id => {
+    
+    Array.from(document.querySelectorAll('.results__link')).forEach(el => {
+        el.classList.remove('results__link--active');
+    });
+
+    document.querySelector(`a[href="#${id}"]`).classList.add('results__link--active');
+
+};
+
 export const showRecipes = (recipes, page = 1, recPerPage = 10) => {
     
     const start = (page - 1) * recPerPage;
