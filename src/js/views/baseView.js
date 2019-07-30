@@ -5,7 +5,11 @@ export const elements = {
     recipeListContainer : document.querySelector('.results'),
     recipeList: document.querySelector('.results__list'),
     recipeListBtnContainer: document.querySelector('.results__pages'),
-    recipeDetailsContainer: document.querySelector('.recipe') 
+    recipeDetailsContainer: document.querySelector('.recipe'),
+    shoppingListContainer: document.querySelector('.shopping__list'),
+    likesMenu: document.querySelector('.likes__field'),
+    likesMenuList: document.querySelector('.likes__list')
+     
 }
 
 const elementStrings = {
